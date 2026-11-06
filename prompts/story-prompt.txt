@@ -1,0 +1,9 @@
+Write a short spoken story told by {PERSONA}. Seven beats, exactly, as JSON with these keys: hook, specific, test1, test2, test3, turn, button.
+POINT (never stated until the button, then said in the narrator's own wrong-footed way, as the last words): {POINT}
+FRAME (the false belief the narrator holds at the start): {FRAME}
+ENGINE ({ENGINE}: denial = keeps believing the frame while evidence piles up; escalation = each piece of evidence bigger than the last; literalism = someone takes a phrase exactly literally; scale = a gap in size or importance)
+TOPIC: {TOPIC}
+Rules: hook = one sentence. specific = one concrete detail. test1, test2, test3 = three pieces of evidence the frame is false, each funnier than the last. turn = he half sees the point. button = the point, short, last. One to two sentences per beat. Plain words, contractions, no explaining the joke, never cruel, never at anyone's expense but the narrator's own. Use only these facts and these people: {CAST}. Invent no other person or place.
+FACTS:
+{FACTS}
+Return only the JSON object.

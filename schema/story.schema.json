@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Storycraft story",
+  "type": "object",
+  "required": ["hook", "specific", "test1", "test2", "test3", "turn", "button"],
+  "additionalProperties": true,
+  "properties": {
+    "hook": { "type": "string", "minLength": 1, "description": "One sentence that opens the story." },
+    "specific": { "type": "string", "minLength": 1, "description": "One concrete, specific detail." },
+    "test1": { "type": "string", "minLength": 1, "description": "First piece of evidence the narrator's belief is false." },
+    "test2": { "type": "string", "minLength": 1, "description": "Second piece, funnier than the first." },
+    "test3": { "type": "string", "minLength": 1, "description": "Third piece, the most absurd." },
+    "turn": { "type": "string", "minLength": 1, "description": "The narrator half sees the point." },
+    "button": { "type": "string", "minLength": 1, "description": "The point, short, in the narrator's own wrong-footed way, as the last words." }
+  }
+}

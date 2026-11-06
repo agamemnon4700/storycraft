@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "storycraft"
+version = "0.1.0"
+description = "Build a short story backwards from its point, so it is funny and lands. Standard library only; works with any language model or none."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["storytelling", "humor", "comedy", "llm", "prompt", "voice-assistant", "chatbot", "companion"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Text Processing",
+]
+
+[project.scripts]
+storycraft = "storycraft.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
